@@ -50,4 +50,7 @@ for dir in "$base_folder"/*; do
   fi
 done
 
-echo 'Image separation complete.'
+# Delete the base_folder and everything inside it
+rm -rf "$base_folder"
+
+echo 'Image separation complete and temporary files deleted.'
